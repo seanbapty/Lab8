@@ -5,7 +5,22 @@ Maze Solving Robot
 #Objectives or purpose
 During this lab, you will combine the previous laboratory assignments and program your robot to autonomously navigate through a maze.
 #Preliminary design/PreLab
+Prior to doing any work pseudo code was written. This was really all the prelab that needed to be done because there were no hardware changes that needed to be made other than disconnect the LEDs once full functionality was achieved as they were a waste of power.
+```
+*Constants specific to each IR sensor*
 
+
+hieracrchy of movements-will be performed unless IR input denotes it cannot and then it will check the next function
+	move forward
+	move left
+	move right
+
+while can move forward
+	go forward
+	else go left
+	else go right
+```
+	
 #Software flow chart / algorithms
 #Hardware schematic
 Below is a culminating schematic of all the necessary pieces to make an autonomous moving robot.

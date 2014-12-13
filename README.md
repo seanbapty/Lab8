@@ -204,7 +204,9 @@ unsigned int rightIR(){
 ```
 As is apparent, the move functions are the same as lab 6 and the IR functions are the same as lab 7.
 #Debugging
-The main error encountered while solving the maze was activating multiple move functions at the same time. When multiple move functions are active, it is difficult to determine the output because the operator does not know which function will over power the other function, or if they will cancel each other out, or if they will create a completely different movement.
+The main error encountered while solving the maze was activating multiple move functions at the same time. When multiple move functions are active, it is difficult to determine the output because the operator does not know which function will over power the other function, or if they will cancel each other out, or if they will create a completely different movement. The scenario where multiple functions combined to do something unique was especially difficult to discern what the problem was because the LED light was being illuminated when it was hard to tell that it should have been. This problem was solved by implementing all movement functions within a single "if else" statement. That way, only one can be run at a time.
 #Testing methodology / results
+The primary mode of testing was to either observe how the wheels reacted to certain IR input (by moving a wall/paper toward or away from them) or place the robot in the maze and see how it performed. The first test in the maze caused the robot to accelerate quickly forward and not make the left turn in time. This was fixed by inputting stop commands to slow down the robots movement and allow the IR sensors to get better data.
+Ultimately, a slow moving robot that responded whenever it got to close to a wall else went forward was created.
 #Observations and Conclusions
 ####Documentation

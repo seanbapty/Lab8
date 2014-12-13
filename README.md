@@ -224,4 +224,7 @@ The main error encountered while solving the maze was activating multiple move f
 The primary mode of testing was to either observe how the wheels reacted to certain IR input (by moving a wall/paper toward or away from them) or place the robot in the maze and see how it performed. The first test in the maze caused the robot to accelerate quickly forward and not make the left turn in time. This was fixed by inputting stop commands to slow down the robots movement and allow the IR sensors to get better data.
 Ultimately, a slow moving robot that responded whenever it got to close to a wall else went forward was created.
 #Observations and Conclusions
+Because of the inconsistancy of the IR data, it was difficult to calibrate movements that would properly solve the maze. In the future I will try to utulize a moving average to get better ADC data that can be used to dictate the robots movement. 
+Additionally, in this instance, faster is almost worse. A slower robot means the movements are not as drastic and potentially catostrophic. Additionally, the electric motors produce a lot of noice that is reduced when the motors are slower. Finally, a slower motor allows for more IR samples. Over a larger population, the probability that a single outlyer is reduced thus giving the robot more accurate data on average.
 ####Documentation
+I discussed possible alorigthms with C2C Arneberg even though I couldn't figure out how to properly program his algorithm. 
